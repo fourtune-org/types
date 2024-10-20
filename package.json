@@ -1,0 +1,37 @@
+{
+  "name": "@fourtune/types",
+  "version": "0.0.0",
+  "description": "This package contains typing information about all fourtune APIs.",
+  "author": "Anio Software <info@anio.software>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourtune-org/types.git"
+  },
+  "exports": {
+    "./base-realm/v*/": {
+      "types": "./src/base-realm/v*/index.d.mts"
+    },
+    "./base-realm-js-and-web/v*/": {
+      "types": "./src/base-realm-js-and-web/v*/index.d.mts"
+    },
+    "./runtime/v*/": {
+      "types": "./src/runtime/v*/index.d.mts"
+    },
+    "./runtime.project/v*/": {
+      "types": "./src/runtime.project/v*/index.d.mts"
+    },
+    "./runtime.resources/v*/": {
+      "types": "./src/runtime.resources/v*/index.d.mts"
+    }
+  },
+  "scripts": {
+    "prepare": "./checkDefinitionFiles.sh"
+  },
+  "peerDependencies": {
+    "typescript": "5.x"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
