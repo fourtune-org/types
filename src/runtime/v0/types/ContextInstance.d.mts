@@ -5,32 +5,32 @@ type ContextInstanceLogMethod = {
 	/**
 	 * @brief Log a message with severity "debug".
 	 */
-	(...messages: Array<string>) : void
+	(...messages: string[]) : void
 
 	/**
 	 * @brief Log a message with severity "error".
 	 */
-	error(...messages: Array<string>) : void
+	error(...messages: string[]) : void
 
 	/**
 	 * @brief Log a message with severity "warning".
 	 */
-	warn(...messages: Array<string>) : void
+	warn(...messages: string[]) : void
 
 	/**
 	 * @brief Log a message with severity "information".
 	 */
-	info(...messages: Array<string>) : void
+	info(...messages: string[]) : void
 
 	/**
 	 * @brief Log a message with severity "debug".
 	 */
-	debug(...messages: Array<string>) : void
+	debug(...messages: string[]) : void
 
 	/**
 	 * @brief Log a message with severity "trace".
 	 */
-	trace(...messages: Array<string>) : void
+	trace(...messages: string[]) : void
 }
 
 //
