@@ -1,3 +1,4 @@
+import type {Project} from "../../../runtime.project/v0/index.d.mts"
 import type {ContextOptions} from "./ContextOptions.d.mts"
 
 type ContextInstanceLogMethod = {
@@ -36,6 +37,8 @@ type ContextInstanceLogMethod = {
 // this interface is used by consumers of the context
 //
 export type ContextInstance = {
+	project : Project
+
 	options : ContextOptions
 
 	log : ContextInstanceLogMethod
