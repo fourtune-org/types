@@ -20,7 +20,7 @@ export type ContextOptions = {
 	/**
 	 * @brief Log lines with a specific log level.
 	 */
-	logWithLevel(this : ContextInstance, level : LogLevel, lines : Array<string>) : void
+	logWithLevel(this : ContextInstance, level : LogLevel, lines : string[]) : void
 
 	/**
 	 * @brief Determine whether a message should be logged.
