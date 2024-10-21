@@ -24,7 +24,13 @@ export type ContextOptions = {
 
 	/**
 	 * @brief Determine whether a message should be logged.
+	 * @param package_name The package name of the module making the request.
+	 * @param tag The tag of the module that is making the request.
 	 */
-	shouldLog(this : ContextInstance, level : LogLevel) : boolean
-	// todo: add parameters like "package_name" and "tag" to shouldLog()
+	shouldLog(
+		this : ContextInstance,
+		level : LogLevel,
+		package_name : string,
+		tag : string
+	) : boolean
 }
