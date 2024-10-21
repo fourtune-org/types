@@ -8,31 +8,15 @@ export interface PackageJSON {
 	[prop : string] : any
 }
 
-export interface FourtuneConfiguration {
-	realm: string
-	type: string
-
-	target?: any
-
-	[prop : string]: any
-}
-
 /**
  * @brief Return the project's package.json as an object.
  */
 export type GetProjectPackageJSON = () => PackageJSON
 
-/**
- * @brief Get fourtune configuration as an object.
- */
-export type GetFourtuneConfiguration = () => FourtuneConfiguration
-
 export type Project = {
-	package_json : PackageJSON,
-	fourtune_configuration : FourtuneConfiguration
+	package_json : PackageJSON
 }
 
 export type DefaultExportObject = {
-	getProjectPackageJSON: GetProjectPackageJSON,
-	getFourtuneConfiguration: GetFourtuneConfiguration
+	getProjectPackageJSON: GetProjectPackageJSON
 }
