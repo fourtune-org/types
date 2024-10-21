@@ -15,14 +15,14 @@
     "./base-realm-js-and-web/v*/": {
       "types": "./src/base-realm-js-and-web/v*/index.d.mts"
     },
-    "./runtime/v*/": {
-      "types": "./src/runtime/v*/index.d.mts"
+    "./realm-js-and-web/runtime/v*/": {
+      "types": "./src/realm-js-and-web/runtime/v*/index.d.mts"
     },
-    "./runtime.project/v*/": {
-      "types": "./src/runtime.project/v*/index.d.mts"
+    "./realm-js-and-web/project/v*/": {
+      "types": "./src/realm-js-and-web/project/v*/index.d.mts"
     },
-    "./runtime.resources/v*/": {
-      "types": "./src/runtime.resources/v*/index.d.mts"
+    "./realm-js-and-web/resources/v*/": {
+      "types": "./src/realm-js-and-web/resources/v*/index.d.mts"
     }
   },
   "scripts": {

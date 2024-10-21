@@ -1,4 +1,4 @@
-import type {Project} from "../../../runtime.project/v0/index.d.mts"
+import type {Project} from "../../../../realm-js-and-web/project/v0/index.d.mts"
 import type {ContextOptions} from "./ContextOptions.d.mts"
 
 type ContextInstanceLogMethod = {
