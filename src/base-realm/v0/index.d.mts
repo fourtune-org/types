@@ -1,12 +1,14 @@
-export type LoadRealmDependencies = (
-	project_root : string,
-	realm : string
-) => Promise<{
+export type LoadRealmDependenciesResult = {
 	getDependency(name : string) : any|null
 	getPathOfDependency(name : string) : string|null
 	getDependencyVersion(name : string) : string|null
 	loadDependencyPackageJSON(name : string) : any|null
-}|null>
+}
+
+export type LoadRealmDependencies = (
+	project_root : string,
+	realm : string
+) => Promise<LoadRealmDependenciesResult|null>
 
 export type InstallRealmDependencies = (
 	project_root : string,
