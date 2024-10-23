@@ -6,19 +6,17 @@ export type LoadRealmDependencies = (
 	getPathOfDependency(name : string) : string|null
 	getDependencyVersion(name : string) : string|null
 	loadDependencyPackageJSON(name : string) : any|null
-}>
-
-export type InstallRealmDependenciesMap = {
-	[name: string] : {
-		version : string,
-		import_code: string
-	}
-}
+}|null>
 
 export type InstallRealmDependencies = (
 	project_root : string,
 	realm : string,
-	dependencies : InstallRealmDependenciesMap
+	dependencies : {
+		[name: string] : {
+			version : string,
+			import_code?: string
+		}
+	}
 ) => Promise<void>
 
 export type FindProjectRootFromDirectory = (
