@@ -1,6 +1,7 @@
 import ts from "typescript"
 
 export type TsInvokeTypeScript = (
+	project_root : string,
 	host : ts.CompilerHost,
 	input_files : string[],
 	compiler_options : ts.CompilerOptions
