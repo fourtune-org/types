@@ -24,7 +24,7 @@ export type LoadResourceAsURL = (
 	url : string
 ) => string
 
-export type DefaultExportObject = {
+export type ExportObject = {
 	loadResource: LoadResource,
 	loadResourceAsURL: LoadResourceAsURL
 }
