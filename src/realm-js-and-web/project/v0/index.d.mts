@@ -32,7 +32,9 @@ export type Project = {
 	fourtune_configuration : FourtuneConfiguration
 }
 
-export type DefaultExportObject = {
+export type ExportObject = {
 	getProjectPackageJSON: GetProjectPackageJSON,
 	getFourtuneConfiguration: GetFourtuneConfiguration
 }
+
+export type DefaultExportObject = ExportObject

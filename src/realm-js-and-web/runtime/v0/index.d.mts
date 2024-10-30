@@ -14,8 +14,10 @@ import type {CreateDefaultContext} from "./methods/createDefaultContext.d.mts"
 import type {GetRuntimeVersion} from "./methods/getRuntimeVersion.d.mts"
 import type {UseContext} from "./methods/useContext.d.mts"
 
-export type DefaultExportObject = {
+export type ExportObject = {
 	createDefaultContext: CreateDefaultContext,
 	getRuntimeVersion: GetRuntimeVersion,
 	useContext: UseContext
 }
+
+export type DefaultExportObject = ExportObject
