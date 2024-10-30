@@ -1,27 +1,30 @@
 export type ProjectResource = string | Uint8Array
 
-export type LoadResource = {
-	/**
-	 * @brief Synchronously load a resource
-	 * @description
-	 * Synchronously load the resource at `url`.
-	 * @param url URL of the resource.
-	 * @return
-	 * The resources content.
-	 */
-	(resource : string) : ProjectResource
+/**
+ * @brief Synchronously load a resource
+ * @description
+ * Synchronously load the resource at `url`.
+ * @param url URL of the resource.
+ * @return
+ * The resources content.
+ */
+export type LoadResource = (
+	url : string
+) => ProjectResource
 
-	/**
-	 * @brief Synchronously load a resource
-	 * @description
-	 * Synchronously load the resource at `url`.
-	 * @param url URL of the resource.
-	 * @return
-	 * URL that points to the loaded resource.
-	 */
-	asURL(resource : string) : string
-}
+/**
+ * @brief Synchronously load a resource
+ * @description
+ * Synchronously load the resource at `url`.
+ * @param url URL of the resource.
+ * @return
+ * URL that points to the loaded resource.
+ */
+export type LoadResourceAsURL = (
+	url : string
+) => string
 
 export type DefaultExportObject = {
-	loadResource: LoadResource
+	loadResource: LoadResource,
+	loadResourceAsURL: LoadResourceAsURL
 }
