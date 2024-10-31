@@ -5,4 +5,4 @@ export type TsStripTypesFromCodeOptions = {
 
 export type TsStripTypesFromCode = (
 	code : string, options? : TsStripTypesFromCodeOptions
-) => Promise<{code: string, ast : any}>
+) => Promise<string>
