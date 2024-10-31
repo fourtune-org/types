@@ -1,4 +1,5 @@
 export type TsResolveImportAliasesOptions = {
+	filename? : string
 	aliases? : any
 }
 
