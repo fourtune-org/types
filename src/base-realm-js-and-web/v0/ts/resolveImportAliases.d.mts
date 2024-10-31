@@ -1,6 +1,10 @@
+export type TsAliases = {
+	[key : string] : string
+}
+
 export type TsResolveImportAliasesOptions = {
 	filename? : string
-	aliases? : any
+	aliases? : TsAliases
 }
 
 export type TsResolveImportAliases = (

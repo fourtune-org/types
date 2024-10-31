@@ -1,6 +1,10 @@
+export type JsAliases = {
+	[key : string] : string
+}
+
 export type ResolveImportAliasesOptions = {
 	filename? : string
-	aliases? : any
+	aliases? : JsAliases
 }
 
 export type JsResolveImportAliases = (
