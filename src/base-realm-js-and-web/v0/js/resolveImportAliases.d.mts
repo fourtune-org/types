@@ -9,4 +9,4 @@ export type ResolveImportAliasesOptions = {
 
 export type JsResolveImportAliases = (
 	code : string, options? : ResolveImportAliasesOptions
-) => Promise<{code: string, ast : any}>
+) => Promise<string>
