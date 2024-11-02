@@ -12,6 +12,7 @@ export type * from "./ts/resolveImportAliases.d.mts"
 import type {JsBundler} from "./js/bundler.d.mts"
 import type {JsResolveImportAliases} from "./js/resolveImportAliases.d.mts"
 import type {JsGetDeclaredExportNamesFromCode} from "./js/getDeclaredExportNamesFromCode.d.mts"
+import type {JsGetRequestedAssetsFromCode} from "./js/getRequestedAssetsFromCode.mjs"
 
 import type {TsStripTypesFromCode} from "./ts/stripTypesFromCode.d.mts"
 import type {TsReadTSConfigFile} from "./ts/readTSConfigFile.d.mts"
@@ -26,6 +27,7 @@ export type DefaultExportObject = {
 	jsBundler: JsBundler,
 	jsResolveImportAliases: JsResolveImportAliases,
 	jsGetDeclaredExportNamesFromCode: JsGetDeclaredExportNamesFromCode,
+	jsGetRequestedAssetsFromCode: JsGetRequestedAssetsFromCode,
 
 	ts: typeof ts,
 	tsStripTypesFromCode: TsStripTypesFromCode,
