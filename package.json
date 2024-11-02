@@ -21,8 +21,8 @@
     "./realm-js-and-web/project/v*/": {
       "types": "./src/realm-js-and-web/project/v*/index.d.mts"
     },
-    "./realm-js-and-web/resources/v*/": {
-      "types": "./src/realm-js-and-web/resources/v*/index.d.mts"
+    "./realm-js-and-web/assets/v*/": {
+      "types": "./src/realm-js-and-web/assets/v*/index.d.mts"
     }
   },
   "scripts": {
