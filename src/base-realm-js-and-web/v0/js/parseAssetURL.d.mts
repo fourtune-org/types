@@ -1,5 +1,7 @@
+export type JsAssetURLProtocol = "text" | "js-bundle"
+
 export type JsParseAssetURLResult = {
-	protocol: string,
+	protocol: JsAssetURLProtocol,
 	path: string
 }
 
