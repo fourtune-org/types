@@ -1,6 +1,7 @@
 import type {JsParseAssetURLResult} from "./parseAssetURL.d.mts"
 
 export type JsGetRequestedAssetsFromCodeReason =
+	"unknown" |
 	"starImportUsed" |
 	"getAssetIdentifierUsed" |
 	"getAssetDynamicURL"
