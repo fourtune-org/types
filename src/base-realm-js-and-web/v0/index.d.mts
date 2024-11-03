@@ -1,7 +1,7 @@
 export type * from "./js/bundler.d.mts"
 export type * from "./js/resolveImportAliases.d.mts"
 export type * from "./js/getDeclaredExportNamesFromCode.d.mts"
-export type * from "./js/getRequestedAssetsFromCode.mjs"
+export type * from "./js/getRequestedAssetsFromCode.d.mts"
 export type * from "./js/normalizePath.d.mts"
 export type * from "./js/parseAssetURL.d.mts"
 
@@ -15,7 +15,7 @@ export type * from "./ts/resolveImportAliases.d.mts"
 import type {JsBundler} from "./js/bundler.d.mts"
 import type {JsResolveImportAliases} from "./js/resolveImportAliases.d.mts"
 import type {JsGetDeclaredExportNamesFromCode} from "./js/getDeclaredExportNamesFromCode.d.mts"
-import type {JsGetRequestedAssetsFromCode} from "./js/getRequestedAssetsFromCode.mjs"
+import type {JsGetRequestedAssetsFromCode} from "./js/getRequestedAssetsFromCode.d.mts"
 import type {JsNormalizePath} from "./js/normalizePath.d.mts"
 import type {JsParseAssetURL} from "./js/parseAssetURL.d.mts"
 
