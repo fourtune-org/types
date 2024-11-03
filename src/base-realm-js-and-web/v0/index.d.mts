@@ -1,6 +1,7 @@
 export type * from "./js/bundler.d.mts"
 export type * from "./js/resolveImportAliases.d.mts"
 export type * from "./js/getDeclaredExportNamesFromCode.d.mts"
+export type * from "./js/getRequestedAssetsFromCode.mjs"
 export type * from "./js/normalizePath.d.mts"
 export type * from "./js/parseAssetURL.d.mts"
 
