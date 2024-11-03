@@ -5,7 +5,7 @@ export type JsGetRequestedAssetsFromCodeResult = {
 	assets: null
 } | {
 	used: true,
-	assets: JsParseAssetURLResult[]
+	assets: JsParseAssetURLResult[]|"unknown"
 }
 
 export type JsGetRequestedAssetsFromCode = (
