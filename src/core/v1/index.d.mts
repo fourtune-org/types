@@ -24,7 +24,7 @@ export type DependencyMap = {
 
 export type DependenciesToInstall = {
 	api_version: number
-	map: DependencyMap
+	dependencies: DependencyMap
 }
 
 export type InstallRealmDependencies = (
