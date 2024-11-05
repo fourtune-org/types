@@ -1,3 +1,5 @@
+export type Realm = "js" | "c" | "web"
+
 export type GetVersion = () => number
 
 export type LoadRealmDependencyResult = {
@@ -9,7 +11,7 @@ export type LoadRealmDependencyResult = {
 
 export type LoadRealmDependency = (
 	project_root: string | "cli",
-	realm: string,
+	realm: Realm,
 	dependency_name: string
 ) => Promise<LoadRealmDependencyResult>
 
@@ -34,7 +36,7 @@ export type InstallRealmDependenciesOptions = {
 
 export type InstallRealmDependencies = (
 	project_root: string | "cli",
-	realm: string,
+	realm: Realm,
 	dependencies: DependenciesToInstall,
 	options?: InstallRealmDependenciesOptions
 ) => void
