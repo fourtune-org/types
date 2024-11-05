@@ -27,11 +27,16 @@ export type DependenciesToInstall = {
 	dependencies: DependencyMap
 }
 
+export type InstallRealmDependenciesOptions = {
+	npm_bin_path?: string,
+	force?: boolean
+}
+
 export type InstallRealmDependencies = (
 	project_root: string | "cli",
 	realm: string,
 	dependencies: DependenciesToInstall,
-	npm_bin_path?: string|null
+	options?: InstallRealmDependenciesOptions
 ) => void
 
 export type FindProjectRootFromDirectory = (
