@@ -28,7 +28,7 @@ export type DependenciesToInstall = {
 }
 
 export type InstallRealmDependencies = (
-	project_root: string,
+	project_root: string | "cli",
 	realm: string,
 	dependencies: DependenciesToInstall,
 	npm_bin_path?: string|null
