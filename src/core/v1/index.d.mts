@@ -3,6 +3,7 @@ export type Realm = "js" | "c" | "web"
 export type GetVersion = () => number
 
 export type LoadRealmDependencyResult = {
+	api_version: number,
 	path: string,
 	version: string,
 	dependency: any,
