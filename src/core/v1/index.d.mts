@@ -13,11 +13,13 @@ export type LoadRealmDependency = (
 	dependency_name: string
 ) => Promise<LoadRealmDependencyResult>
 
+export type DependencyMapEntry = {
+	version: string,
+	import_code?: string|null
+}
+
 export type DependencyMap = {
-	[name: string] : {
-		version: string,
-		import_code?: string|null
-	}
+	[name: string] : DependencyMapEntry
 }
 
 export type InstallRealmDependencies = (
