@@ -1,6 +1,6 @@
 {
   "name": "@fourtune/types",
-  "version": "0.50.1",
+  "version": "0.60.0",
   "description": "This package contains typing information about all fourtune APIs.",
   "author": "Anio Software <info@anio.software>",
   "license": "MIT",
