@@ -22,10 +22,15 @@ export type DependencyMap = {
 	[name: string] : DependencyMapEntry
 }
 
+export type DependenciesToInstall = {
+	api_version: number
+	map: DependencyMap
+}
+
 export type InstallRealmDependencies = (
 	project_root: string,
 	realm: string,
-	dependencies: DependencyMap,
+	dependencies: DependenciesToInstall,
 	npm_bin_path?: string|null
 ) => void
 
