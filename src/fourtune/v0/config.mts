@@ -1,3 +1,5 @@
+// todo use Realm type from core
+
 type FourtuneRealmJSPackageType = {
 	realm: "realm-js",
 	type: "package"
