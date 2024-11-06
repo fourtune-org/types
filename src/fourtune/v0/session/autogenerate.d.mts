@@ -6,17 +6,17 @@ export type FourtuneSessionAutogenerate = {
 		items: {
 			[search: string]: string
 		}
-	) => Promise<string>
+	) => Promise<FourtuneFileGenerator>
 
 	generateAsyncSyncVariant: (
 		source_file: string,
 		variant: "async" | "sync"
-	) => Promise<string>
+	) => Promise<FourtuneFileGenerator>
 
 	generateAsyncSyncVariantFromString: (
 		source: string,
 		variant: "async" | "sync"
-	) => Promise<string>
+	) => Promise<FourtuneFileGenerator>
 
 	addFile: (
 		file_path: string,
