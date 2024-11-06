@@ -2,6 +2,10 @@ export type Realm = "js" | "c" | "web"
 
 export type GetVersion = () => number
 
+export type SetEnableDebugPrint = (
+	enabled: boolean
+) => void
+
 export type LoadRealmDependencyResult = {
 	api_version: number,
 	path: string,
@@ -48,6 +52,7 @@ export type FindProjectRootFromDirectory = (
 
 export type DefaultExportObject = {
 	getVersion: GetVersion,
+	setEnableDebugPrint: SetEnableDebugPrint,
 	loadRealmDependency: LoadRealmDependency,
 	installRealmDependencies: InstallRealmDependencies,
 	findProjectRootFromDirectory: FindProjectRootFromDirectory
