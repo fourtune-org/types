@@ -12,6 +12,9 @@
     "./core/v*/": {
       "types": "./src/core/v*/index.d.mts"
     },
+    "./fourtune/v*/": {
+      "types": "./src/fourtune/v*/index.d.mts"
+    },
     "./base-realm-js-and-web/v*/": {
       "types": "./src/base-realm-js-and-web/v*/index.d.mts"
     },
