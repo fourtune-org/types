@@ -6,12 +6,14 @@ export type FourtuneSessionBase = {
 
 	emitWarning: (
 		id: string,
-		meta: any
+		message: string,
+		meta: {[key: string]: string}
 	) => void
 
 	emitError: (
 		id: string,
-		meta: any
+		message: string,
+		meta: {[key: string]: string}
 	) => void
 
 	getDependency : (
