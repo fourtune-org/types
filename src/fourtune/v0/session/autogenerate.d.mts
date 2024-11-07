@@ -17,6 +17,12 @@ export type FourtuneAutogenerateGenerateAsyncSyncVariantFromString = (
 	variant: "async" | "sync"
 ) => Promise<FourtuneFileGenerator>
 
+export type FourtuneAutogenerate = {
+	generateFromTemplate: FourtuneAutogenerateGenerateFromTemplate,
+	generateAsyncSyncVariant: FourtuneAutogenerateGenerateAsyncSyncVariant,
+	generateAsyncSyncVariantFromString: FourtuneAutogenerateGenerateAsyncSyncVariantFromString
+}
+
 export type FourtuneSessionAutogenerate = {
 	generateFromTemplate: FourtuneAutogenerateGenerateFromTemplate,
 	generateAsyncSyncVariant: FourtuneAutogenerateGenerateAsyncSyncVariant,
