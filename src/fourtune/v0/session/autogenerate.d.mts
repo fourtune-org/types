@@ -5,17 +5,17 @@ export type FourtuneAutogenerateGenerateFromTemplate = (
 	items: {
 		[search: string]: string
 	}
-) => Promise<FourtuneFileGenerator>
+) => FourtuneFileGenerator
 
 export type FourtuneAutogenerateGenerateAsyncSyncVariant = (
 	source_file: string,
 	variant: "async" | "sync"
-) => Promise<FourtuneFileGenerator>
+) => FourtuneFileGenerator
 
 export type FourtuneAutogenerateGenerateAsyncSyncVariantFromString = (
 	source: string,
 	variant: "async" | "sync"
-) => Promise<FourtuneFileGenerator>
+) => FourtuneFileGenerator
 
 export type FourtuneAutogenerate = {
 	generateFromTemplate: FourtuneAutogenerateGenerateFromTemplate,
