@@ -4,6 +4,37 @@ import type {FourtuneSessionHookFn as FourtuneHookFn} from "./session/hooks.d.mt
 import type {FourtuneConfig} from "./config.d.mts"
 import type {FourtuneFileGenerator} from "./generator.d.mts"
 
+export type FourtuneInputFile = {
+	parents: string[]
+	name: string
+	relative_path: string
+	source: string
+	synthetic?: boolean
+}
+
+export type FourtuneRealmIntegration = {
+	getIntegrationAPIVersion: () => Promise<number>,
+
+	preInitialize?: (
+		f: FourtuneSession,
+		target_configuration: any,
+		assets: FourtuneInputFile[],
+		source_files: FourtuneInputFile[]
+	) => Promise<void>,
+
+	initialize: (
+		f: FourtuneSession,
+		target_configuration: any,
+		assets: FourtuneInputFile[],
+		source_files: FourtuneInputFile[]
+	) => Promise<void>,
+
+	initializeProject: (
+		f: FourtuneSession,
+		writeFile: any
+	) => Promise<void>
+}
+
 export type {
 	FourtuneAutogenerateGenerateFromTemplate,
 	FourtuneAutogenerateGenerateAsyncSyncVariant,
