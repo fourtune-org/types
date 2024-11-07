@@ -3,6 +3,7 @@ export type FourtuneSessionInputEntry = {
 	name: string,
 	relative_path: string,
 	source: string
+	synthetic?: boolean
 }
 
 export type FourtuneSessionInput = {
