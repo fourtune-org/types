@@ -18,14 +18,14 @@
     "./base-realm-js-and-web/v*/": {
       "types": "./src/base-realm-js-and-web/v*/index.d.mts"
     },
-    "./realm-js-and-web/runtime/v*/": {
-      "types": "./src/realm-js-and-web/runtime/v*/index.d.mts"
+    "./realm-js-and-web/v*/runtime": {
+      "types": "./src/realm-js-and-web/v*/runtime/index.d.mts"
     },
-    "./realm-js-and-web/project/v*/": {
-      "types": "./src/realm-js-and-web/project/v*/index.d.mts"
+    "./realm-js-and-web/v*/project": {
+      "types": "./src/realm-js-and-web/v*/project/index.d.mts"
     },
-    "./realm-js-and-web/assets/v*/": {
-      "types": "./src/realm-js-and-web/assets/v*/index.d.mts"
+    "./realm-js-and-web/v*/assets": {
+      "types": "./src/realm-js-and-web/v*/assets/index.d.mts"
     }
   },
   "scripts": {

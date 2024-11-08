@@ -2,7 +2,7 @@ export type * from "./methods/createDefaultContext.d.mts"
 export type * from "./methods/getRuntimeVersion.d.mts"
 export type * from "./methods/useContext.d.mts"
 
-export type * from "../WrappedContext.d.mts"
+export type * from "./WrappedContext.d.mts"
 
 export type * from "./types/ContextInstance.d.mts"
 export type * from "./types/ContextOptions.d.mts"
