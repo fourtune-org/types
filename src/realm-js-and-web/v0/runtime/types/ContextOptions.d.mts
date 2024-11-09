@@ -10,17 +10,17 @@ export type ContextOptions = {
 	/**
 	 * @brief Retrieve the current log level.
 	 */
-	getCurrentLogLevel(this : ContextInstance) : LogLevel
+	getCurrentLogLevel(context : ContextInstance) : LogLevel
 
 	/**
 	 * @brief Print a line.
 	 */
-	printLine(this : ContextInstance, line : string): void
+	printLine(context : ContextInstance, line : string): void
 
 	/**
 	 * @brief Log lines with a specific log level.
 	 */
-	logWithLevel(this : ContextInstance, level : LogLevel, lines : string[]) : void
+	logWithLevel(context : ContextInstance, level : LogLevel, lines : string[]) : void
 
 	/**
 	 * @brief Determine whether a message should be logged.
@@ -28,7 +28,7 @@ export type ContextOptions = {
 	 * @param tag The tag of the module that is making the request.
 	 */
 	shouldLog(
-		this : ContextInstance,
+		context : ContextInstance,
 		level : LogLevel,
 		package_name : string,
 		tag : string
