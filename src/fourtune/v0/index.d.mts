@@ -20,19 +20,19 @@ export type FourtuneRealmIntegration = {
 		target_configuration: any,
 		assets: FourtuneInputFile[],
 		source_files: FourtuneInputFile[]
-	) => Promise<void>,
+	) => Promise<undefined>,
 
 	initialize: (
 		f: FourtuneSession,
 		target_configuration: any,
 		assets: FourtuneInputFile[],
 		source_files: FourtuneInputFile[]
-	) => Promise<void>,
+	) => Promise<undefined>,
 
 	initializeProject: (
 		f: FourtuneSession,
 		writeFile: any
-	) => Promise<void>
+	) => Promise<undefined>
 }
 
 export type {

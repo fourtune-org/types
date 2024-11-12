@@ -4,7 +4,7 @@ export type GetVersion = () => number
 
 export type SetEnableDebugPrint = (
 	enabled: boolean
-) => void
+) => undefined
 
 export type LoadRealmDependencyResult = {
 	api_version: number,
@@ -44,7 +44,7 @@ export type InstallRealmDependencies = (
 	realm: Realm,
 	dependencies: DependenciesToInstall,
 	options?: InstallRealmDependenciesOptions
-) => void
+) => Promise<undefined>
 
 export type FindProjectRootFromDirectory = (
 	start_directory: string

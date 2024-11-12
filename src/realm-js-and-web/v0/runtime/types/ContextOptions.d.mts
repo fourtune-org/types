@@ -14,7 +14,7 @@ export type ContextOptionsGetCurrentLogLevel = (
 export type ContextOptionsPrintLine = (
 	context: ContextInstance,
 	line: string
-) => void
+) => undefined
 
 /**
  * @brief Log lines with a specific log level.
@@ -23,7 +23,7 @@ export type ContextOptionsLogWithLevel = (
 	context : ContextInstance,
 	level : LogLevel,
 	lines : string[]
-) => void
+) => undefined
 
 /**
  * @brief Determine whether a message should be logged.

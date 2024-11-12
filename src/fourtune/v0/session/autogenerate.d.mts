@@ -31,5 +31,5 @@ export type FourtuneSessionAutogenerate = {
 	addFile: (
 		file_path: string,
 		generator: FourtuneFileGenerator
-	) => void
+	) => undefined
 }

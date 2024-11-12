@@ -8,13 +8,13 @@ export type FourtuneSessionBase = {
 		id: string,
 		message: string,
 		meta: {[key: string]: string}
-	) => void
+	) => undefined
 
 	emitError: (
 		id: string,
 		message: string,
 		meta: {[key: string]: string}
-	) => void
+	) => undefined
 
 	getDependency : (
 		dependency_name: string

@@ -4,11 +4,11 @@ import type {FourtuneSession} from "../session.d.mts"
 export type FourtuneSessionHookFn = (
 	fourtune_session: FourtuneSession,
 	hook_id: FourtuneHookId
-) => void
+) => undefined
 
 export type FourtuneSessionHooks = {
 	register: (
 		id: FourtuneHookId,
 		fn: FourtuneSessionHookFn
-	) => void
+	) => undefined
 }

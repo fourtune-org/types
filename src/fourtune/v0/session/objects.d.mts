@@ -4,5 +4,5 @@ export type FourtuneSessionObjects = {
 	addObject: (
 		file_path: string,
 		generator: FourtuneFileGenerator
-	) => void
+	) => undefined
 }
