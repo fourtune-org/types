@@ -28,7 +28,12 @@ export type FourtuneSessionAutogenerate = {
 	generateAsyncSyncVariant: FourtuneAutogenerateGenerateAsyncSyncVariant,
 	generateAsyncSyncVariantFromString: FourtuneAutogenerateGenerateAsyncSyncVariantFromString,
 
-	addFile: (
+	addFourtuneFile: (
+		file_path: string,
+		generator: FourtuneFileGenerator
+	) => undefined
+
+	addUserFile: (
 		file_path: string,
 		generator: FourtuneFileGenerator
 	) => undefined
