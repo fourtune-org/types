@@ -21,7 +21,7 @@ import type {JsGetRequestedAssetsFromCode} from "./js/getRequestedAssetsFromCode
 import type {JsGetRequestedAssetsFromFiles} from "./js/getRequestedAssetsFromFiles.d.mts"
 import type {JsNormalizePath} from "./js/normalizePath.d.mts"
 import type {JsParseAssetURL} from "./js/parseAssetURL.d.mts"
-import type {GetBaseTsConfigPath} from "./js/getBaseTsConfigPath.d.mts"
+import type {JsGetBaseTsConfigPath} from "./js/getBaseTsConfigPath.d.mts"
 
 import type {TsStripTypesFromCode} from "./ts/stripTypesFromCode.d.mts"
 import type {TsReadTSConfigFile} from "./ts/readTSConfigFile.d.mts"
@@ -40,7 +40,7 @@ export type DefaultExportObject = {
 	jsGetRequestedAssetsFromFiles: JsGetRequestedAssetsFromFiles,
 	jsNormalizePath: JsNormalizePath,
 	jsParseAssetURL: JsParseAssetURL,
-	getBaseTsConfigPath: GetBaseTsConfigPath,
+	jsGetBaseTsConfigPath: JsGetBaseTsConfigPath,
 
 	ts: typeof ts,
 	tsStripTypesFromCode: TsStripTypesFromCode,
