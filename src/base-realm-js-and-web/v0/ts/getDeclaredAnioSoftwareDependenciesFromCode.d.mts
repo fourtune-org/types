@@ -1,4 +1,4 @@
-export type TsGetDeclaredFourtuneDependenciesFromCode = (
+export type TsGetDeclaredAnioSoftwareDependenciesFromCode = (
 	code: string
 ) => Promise<Map<string, {
 	module_name: string,
