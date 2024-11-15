@@ -14,6 +14,7 @@ export type * from "./ts/bundler.d.mts"
 export type * from "./ts/getDeclaredExportNamesFromCode.d.mts"
 export type * from "./ts/resolveImportAliases.d.mts"
 export type * from "./ts/getDeclaredAnioSoftwareDependenciesFromCode.d.mts"
+export type * from "./ts/isExportedFunctionAsync.d.mts"
 
 import type {JsBundler} from "./js/bundler.d.mts"
 import type {JsResolveImportAliases} from "./js/resolveImportAliases.d.mts"
@@ -31,6 +32,7 @@ import type {TsBundler} from "./ts/bundler.d.mts"
 import type {TsGetDeclaredExportNamesFromCode} from "./ts/getDeclaredExportNamesFromCode.d.mts"
 import type {TsResolveImportAliases} from "./ts/resolveImportAliases.d.mts"
 import type {TsGetDeclaredAnioSoftwareDependenciesFromCode} from "./ts/getDeclaredAnioSoftwareDependenciesFromCode.d.mts"
+import type {TsIsExportedFunctionAsync} from "./ts/isExportedFunctionAsync.d.mts"
 
 import * as ts from "typescript"
 
@@ -51,5 +53,6 @@ export type DefaultExportObject = {
 	tsBundler: TsBundler,
 	tsGetDeclaredExportNamesFromCode: TsGetDeclaredExportNamesFromCode,
 	tsResolveImportAliases: TsResolveImportAliases,
-	tsGetDeclaredAnioSoftwareDependenciesFromCode: TsGetDeclaredAnioSoftwareDependenciesFromCode
+	tsGetDeclaredAnioSoftwareDependenciesFromCode: TsGetDeclaredAnioSoftwareDependenciesFromCode,
+	tsIsExportedFunctionAsync: TsIsExportedFunctionAsync
 }
