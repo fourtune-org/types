@@ -3,5 +3,5 @@ export type TsGenerateFunctionFactoryCode = (
 	factory_name: string,
 	function_name: string,
 	code: string,
-	expect_async_implementation: boolean
+	expect_async_implementation: boolean|null
 ) => Promise<string>
