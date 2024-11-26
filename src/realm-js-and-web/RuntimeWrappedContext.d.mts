@@ -1,10 +1,10 @@
-// NB: this type was, but should, remain version independent
+// NB: this type should remain version independent
 
 //
-// instance has type "object" because it's not known
+// instance has type "unknown" because it's not known
 // what version the instance object is
 //
-export type WrappedContext = {
+export type RuntimeWrappedContext = {
 	/**
 	 * @brief Version of the context.
 	 */
