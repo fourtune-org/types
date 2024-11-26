@@ -13,5 +13,5 @@ export type WrappedContext = {
 	/**
 	 * @brief The wrapped context instance.
 	 */
-	_instance : object
+	_instance : unknown
 }
