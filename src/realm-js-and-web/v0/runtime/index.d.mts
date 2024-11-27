@@ -6,7 +6,7 @@ export type * from "./types/ContextInstance.d.mts"
 export type * from "./types/ContextOptions.d.mts"
 export type * from "./types/FunctionTypeFromFactory.d.mts"
 export type * from "./types/LogLevel.d.mts"
-export type * from "./types/UserContext.d.mts"
+export type * from "./types/WrappedContextOrOptions.d.mts"
 
 import type {CreateDefaultContext} from "./methods/createDefaultContext.d.mts"
 
