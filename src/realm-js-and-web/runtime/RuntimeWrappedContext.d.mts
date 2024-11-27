@@ -1,4 +1,4 @@
-// NB: this type should remain version independent
+// NB: this type must remain version independent
 
 //
 // instance has type "unknown" because it's not known
