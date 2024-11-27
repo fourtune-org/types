@@ -1,5 +1,7 @@
-// this type represents a versioned object
-
+/**
+ * @description
+ * Represents a wrapped object.
+ */
 export type RuntimeVersionedObject = {
 	/**
 	 * @description
