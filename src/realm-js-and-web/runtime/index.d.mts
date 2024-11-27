@@ -24,9 +24,6 @@ export type UseContext = {
 	(wrapped_context: RuntimeWrappedContextInstance, version: number) : unknown
 }
 
-export type GetRuntimeVersion = () => string
-
 export type ExportObject = {
-	useContext: UseContext,
-	getRuntimeVersion: GetRuntimeVersion
+	useContext: UseContext
 }
