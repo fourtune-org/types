@@ -6,9 +6,9 @@ export type CreateDefaultContext = (
 		// this prevents someone from both specifying options
 		// and a wrapped context instance
 		Partial<ContextOptions> & {
-			_kind: never
-			_version: never
-			_instance: never
+			_kind?: never
+			_version?: never
+			_instance?: never
 		}
 	)
 ) => RuntimeWrappedContextInstance
