@@ -37,8 +37,8 @@ export type GetVersionOfContext = {
 	 * An object containing the major and minor (named revision) version number.
 	 */
 	(wrapped_context: RuntimeWrappedContextInstance) : {
-		major: string,
-		revision: string
+		major: number,
+		revision: number
 	}
 }
 
