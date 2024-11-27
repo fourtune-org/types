@@ -1,5 +1,4 @@
 export type * from "./methods/createDefaultContext.d.mts"
-export type * from "./methods/useContext.d.mts"
 
 export type * from "../../runtime/RuntimeWrappedContext.d.mts"
 
@@ -10,11 +9,9 @@ export type * from "./types/LogLevel.d.mts"
 export type * from "./types/UserContext.d.mts"
 
 import type {CreateDefaultContext} from "./methods/createDefaultContext.d.mts"
-import type {UseContext} from "./methods/useContext.d.mts"
 
 export type ExportObject = {
-	createDefaultContext: CreateDefaultContext,
-	useContext: UseContext
+	createDefaultContext: CreateDefaultContext
 }
 
 export type DefaultExportObject = ExportObject
