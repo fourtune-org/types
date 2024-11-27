@@ -14,12 +14,10 @@ export declare function isRuntimeWrappedContextInstanceV0(
 export {ContextInstanceV0}
 export {RuntimeWrappedContextInstance}
 
-declare function useContext(
-	wrapped_context: RuntimeWrappedContextInstance,
-	version: 0
-) : ContextInstanceV0
-
-export {useContext}
+export type UseContext = {
+	(wrapped_context: RuntimeWrappedContextInstance, version: 1) : ContextInstanceV0
+	(wrapped_context: RuntimeWrappedContextInstance, version: number) : unknown
+}
 
 /**
  * @brief Get runtime version number
