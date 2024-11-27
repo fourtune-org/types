@@ -1,7 +1,7 @@
 import type {RuntimeWrappedContext as WrappedContext} from "./RuntimeWrappedContext.d.mts"
 export type RuntimeWrappedContext = WrappedContext
 
-import type {ContextInstance as ContextInstanceV0} from "./v0/runtime/index.d.mts"
+import type {ContextInstance as ContextInstanceV0} from "../v0/runtime/index.d.mts"
 
 export type RuntimeWrappedContextV0 = {
 	_version: 0
