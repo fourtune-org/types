@@ -2,9 +2,9 @@ import type {RuntimeWrappedContextInstance} from "./RuntimeWrappedContextInstanc
 import type {ContextInstance as ContextInstanceV0} from "../v0/runtime/index.d.mts"
 
 export type RuntimeWrappedContextV0 = {
-	_kind: "RuntimeContextInstance"
-	_version: 0
-	_instance: ContextInstanceV0
+	readonly _kind: "RuntimeContextInstance"
+	readonly _version: 0
+	readonly _instance: ContextInstanceV0
 }
 
 export declare function isRuntimeWrappedContextInstanceV0(

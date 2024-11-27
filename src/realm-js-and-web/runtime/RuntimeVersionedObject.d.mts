@@ -8,11 +8,11 @@ export type RuntimeVersionedObject = {
 	 * The kind of wrapped object.
 	 * Can only be RuntimeContextInstance" (at the moment).
 	 */
-	_kind: string
+	readonly _kind: string
 
 	/**
 	 * @description
 	 * The version of the wrapped object.
 	 */
-	_version: number
+	readonly _version: number
 }
