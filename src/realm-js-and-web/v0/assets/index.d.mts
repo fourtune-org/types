@@ -8,9 +8,7 @@ export type ProjectAsset = string | Uint8Array
  * @return
  * The asset's content.
  */
-export type GetAsset = (
-	url : string
-) => ProjectAsset
+export type GetAsset = (url : string) => ProjectAsset
 
 /**
  * @brief Synchronously load a project asset
@@ -20,9 +18,7 @@ export type GetAsset = (
  * @return
  * URL that points to the loaded asset.
  */
-export type GetAssetAsURL = (
-	url : string
-) => string
+export type GetAssetAsURL = (url : string) => string
 
 export type ExportObject = {
 	getAsset: GetAsset,
