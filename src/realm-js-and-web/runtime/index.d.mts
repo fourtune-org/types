@@ -24,6 +24,23 @@ export type UseContext = {
 	(wrapped_context: RuntimeWrappedContextInstance, version: number) : unknown
 }
 
+// vv-- written this way so JSDoc works for this function
+export type GetVersionOfContext = {
+	/**
+	 * @brief
+	 * Return version information about a context.
+	 * @param wrapped_context
+	 * The wrapped context instance.
+	 * @return
+	 * An object containing the major and minor (named revision) version number.
+	 */
+	(wrapped_context: RuntimeWrappedContextInstance) : {
+		major: string,
+		revision: string
+	}
+}
+
 export type ExportObject = {
-	useContext: UseContext
+	useContext: UseContext,
+	getVersionOfContext: GetVersionOfContext
 }

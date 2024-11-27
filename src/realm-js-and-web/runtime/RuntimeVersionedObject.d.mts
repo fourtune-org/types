@@ -15,4 +15,10 @@ export type RuntimeVersionedObject = {
 	 * The version of the wrapped object.
 	 */
 	readonly _version: number
+
+	/**
+	 * @description
+	 * The minor version of the wrapped object.
+	 */
+	readonly _revision: number
 }

@@ -8,6 +8,7 @@ export type CreateDefaultContext = (
 		Partial<ContextOptions> & {
 			_kind?: never
 			_version?: never
+			_revision?: never
 			_instance?: never
 		}
 	)
