@@ -37,7 +37,7 @@ type ContextInstanceLogMethod = {
 //
 // this interface is used by consumers of the context
 //
-export type ContextInstance = RuntimeContextInstanceInternals | {
+export type ContextInstance = RuntimeContextInstanceInternals & {
 	project : Project
 
 	options : ContextOptions
