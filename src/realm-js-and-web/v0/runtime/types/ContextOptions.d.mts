@@ -46,6 +46,7 @@ export type ContextOptions = {
 
 	/**
 	 * @brief Determine whether a message should be logged.
+	 * @param level The log level of the message.
 	 * @param package_name The package name of the module making the request.
 	 * @param tag The tag of the module that is making the request.
 	 */
