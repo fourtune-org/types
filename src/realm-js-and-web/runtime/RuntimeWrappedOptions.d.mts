@@ -1,14 +1,7 @@
-// NB: this type must remain version independent
+import type {RuntimeVersionedObject} from "./RuntimeVersionedObject.d.mts"
 
-//
-// options has type "unknown" because it's not known
-// what version the options object is
-//
-export type RuntimeWrappedOptions = {
-	/**
-	 * @brief Version of the context.
-	 */
-	_version : number
+export type RuntimeWrappedOptions = RuntimeVersionedObject & {
+	_kind: "RuntimeOptions"
 
 	/**
 	 * @brief The wrapped options.
