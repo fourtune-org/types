@@ -1,6 +1,9 @@
 import type {RuntimeWrappedContext as WrappedContext} from "./RuntimeWrappedContext.d.mts"
 export type RuntimeWrappedContext = WrappedContext
 
+import type {RuntimeWrappedOptions as WrappedOptions} from "./RuntimeWrappedOptions.d.mts"
+export type RuntimeWrappedOptions = WrappedOptions
+
 import type {ContextInstance as ContextInstanceV0} from "../v0/runtime/index.d.mts"
 
 export type RuntimeWrappedContextV0 = {
