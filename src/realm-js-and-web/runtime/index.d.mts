@@ -32,15 +32,19 @@ export type UseContext = {
 export type GetContextMetaData = {
 	/**
 	 * @brief
-	 * Return version information about a context.
+	 * Return information about a context.
 	 * @param wrapped_context
 	 * The wrapped context instance.
 	 * @return
-	 * An object containing the major and minor (named revision) version number.
+	 * An object containing the major and minor (named revision) version number
+	 * as well as the package this context was created in.
 	 */
 	(wrapped_context: RuntimeWrappedContextInstance) : {
-		major: number,
-		revision: number
+		version: {
+			major: number,
+			revision: number
+		},
+		package: RuntimePackageInformation
 	}
 }
 
