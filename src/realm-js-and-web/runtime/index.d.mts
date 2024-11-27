@@ -9,7 +9,4 @@ export type UseContext = {
 	(wrapped_context: RuntimeWrappedContextInstance, version: number) : unknown
 }
 
-/**
- * @brief Get runtime version number
- */
-export declare function getRuntimeVersion() : string
+export type GetRuntimeVersion = () => string
