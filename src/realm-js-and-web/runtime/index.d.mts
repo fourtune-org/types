@@ -10,3 +10,8 @@ export type UseContext = {
 }
 
 export type GetRuntimeVersion = () => string
+
+export type ExportObject = {
+	useContext: UseContext,
+	getRuntimeVersion: GetRuntimeVersion
+}
