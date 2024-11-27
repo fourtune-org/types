@@ -1,8 +1,7 @@
 import type {
-	RuntimeWrappedContextInstance,
-	RuntimeWrappedOptionsOrContextInstance
+	RuntimeWrappedContextInstance
 } from "../../../runtime/index.d.mts"
 
 export type CreateDefaultContext = (
-	options_or_context: RuntimeWrappedOptionsOrContextInstance|undefined
+	context: RuntimeWrappedContextInstance|undefined
 ) => RuntimeWrappedContextInstance
