@@ -2,6 +2,7 @@ import type {RuntimeWrappedContextInstance} from "./RuntimeWrappedContextInstanc
 import type {ContextInstance as ContextInstanceV0} from "../v0/runtime/index.d.mts"
 
 export {ContextInstanceV0}
+export {ContextInstanceV0 as ContextInstanceV0Rev0}
 export {RuntimeWrappedContextInstance}
 
 export type UseContext = {
