@@ -29,7 +29,7 @@ export type UseContext = {
 }
 
 // vv-- written this way so JSDoc works for this function
-export type GetVersionOfContext = {
+export type GetContextMetaData = {
 	/**
 	 * @brief
 	 * Return version information about a context.
@@ -46,5 +46,5 @@ export type GetVersionOfContext = {
 
 export type ExportObject = {
 	useContext: UseContext,
-	getVersionOfContext: GetVersionOfContext
+	getContextMetaData: GetContextMetaData
 }
