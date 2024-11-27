@@ -1,3 +1,4 @@
+import type {RuntimePackageInformation} from "../../../runtime/RuntimePackageInformation.d.mts"
 import type {LogLevel} from "./LogLevel.d.mts"
 import type {ContextInstance} from "./ContextInstance.d.mts"
 
@@ -19,7 +20,7 @@ export type ContextOptionsLogWithLevel = (
 export type ContextOptionsShouldLog = (
 	context : ContextInstance,
 	level : LogLevel,
-	package_name : string,
+	package : RuntimePackageInformation,
 	tag : string
 ) => boolean
 
