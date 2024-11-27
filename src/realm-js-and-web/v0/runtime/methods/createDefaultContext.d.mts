@@ -4,5 +4,5 @@ import type {Project} from "../../project/index.d.mts"
 
 export type CreateDefaultContext = (
 	project: Project,
-	options_or_context : WrappedContextOrOptions
+	context_or_options : WrappedContextOrOptions
 ) => RuntimeWrappedContext
