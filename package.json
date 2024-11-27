@@ -18,6 +18,9 @@
     "./base-realm-js-and-web/v*": {
       "types": "./src/base-realm-js-and-web/v*/index.d.mts"
     },
+    "./realm-js-and-web": {
+      "types": "./src/realm-js-and-web/index.d.mts"
+    },
     "./realm-js-and-web/v*/runtime": {
       "types": "./src/realm-js-and-web/v*/runtime/index.d.mts"
     },
