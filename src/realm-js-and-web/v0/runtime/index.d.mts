@@ -9,8 +9,10 @@ export type * from "./types/LogLevel.d.mts"
 export type * from "./types/WrappedContextOrOptions.d.mts"
 
 import type {CreateDefaultContext} from "./methods/createDefaultContext.d.mts"
+import type {CreateOptions} from "./methods/createOptions.d.mts"
 
 export type ExportObject = {
+	createOptions: CreateOptions,
 	createDefaultContext: CreateDefaultContext
 }
 
