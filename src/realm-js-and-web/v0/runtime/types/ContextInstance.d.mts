@@ -1,3 +1,4 @@
+import type {RuntimePackageInformation} from "../../../runtime/index.d.mts"
 import type {Project} from "../../project/index.d.mts"
 import type {ContextOptions} from "./ContextOptions.d.mts"
 
@@ -37,6 +38,9 @@ type ContextInstanceLogMethod = {
 // this interface is used by consumers of the context
 //
 export type ContextInstance = {
+	// every context instance has (or will have) this property
+	readonly __original_package: RuntimePackageInformation
+
 	project : Project
 
 	options : ContextOptions
