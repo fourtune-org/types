@@ -11,3 +11,8 @@ export type RuntimeWrappedContextV0 = {
 export declare function isRuntimeWrappedContextV0(
 	context: RuntimeWrappedContext
 ) : context is RuntimeWrappedContextV0
+
+/**
+ * @brief Get runtime version number
+ */
+export declare function getRuntimeVersion() : string
