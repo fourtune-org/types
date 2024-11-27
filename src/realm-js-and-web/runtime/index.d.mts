@@ -5,7 +5,7 @@ export {ContextInstanceV0}
 export {RuntimeWrappedContextInstance}
 
 export type UseContext = {
-	(wrapped_context: RuntimeWrappedContextInstance, version: 1) : ContextInstanceV0
+	(wrapped_context: RuntimeWrappedContextInstance, version: 0) : ContextInstanceV0
 	(wrapped_context: RuntimeWrappedContextInstance, version: number) : unknown
 }
 
