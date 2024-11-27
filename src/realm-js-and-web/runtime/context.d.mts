@@ -10,6 +10,6 @@ export type RuntimeWrappedContextV0 = {
 	_instance: ContextInstanceV0
 }
 
-export declare function isRuntimeWrappedContextV0(
+export declare function isRuntimeWrappedContextInstanceV0(
 	context: RuntimeWrappedContextInstance
 ) : context is RuntimeWrappedContextV0
