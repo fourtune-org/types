@@ -4,5 +4,5 @@ import type {
 } from "../../../runtime/index.d.mts"
 
 export type CreateDefaultContext = (
-	context_or_options: RuntimeWrappedOptionsOrContextInstance|undefined
+	options_or_context: RuntimeWrappedOptionsOrContextInstance|undefined
 ) => RuntimeWrappedContextInstance
