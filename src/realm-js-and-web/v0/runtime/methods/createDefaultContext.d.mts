@@ -2,6 +2,8 @@ import type {WrappedContextOrOptions} from "../types/WrappedContextOrOptions.d.m
 import type {RuntimeWrappedContext} from "../../../runtime/RuntimeWrappedContext.d.mts"
 import type {Project} from "../../project/index.d.mts"
 
+export {Project}
+
 export type CreateDefaultContext = (
 	project: Project,
 	context_or_options: WrappedContextOrOptions|undefined
