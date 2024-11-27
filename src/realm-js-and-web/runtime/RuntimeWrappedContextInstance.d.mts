@@ -1,7 +1,7 @@
 import type {RuntimeVersionedObject} from "./RuntimeVersionedObject.d.mts"
 
-export type RuntimeWrappedContext = RuntimeVersionedObject & {
-	_kind: "RuntimeContext"
+export type RuntimeWrappedContextInstance = RuntimeVersionedObject & {
+	_kind: "RuntimeContextInstance"
 
 	/**
 	 * @brief The wrapped instance.
