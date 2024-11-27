@@ -1,17 +1,10 @@
-// NB: this type must remain version independent
+import type {RuntimeVersionedObject} from "./RuntimeVersionedObject.d.mts"
 
-//
-// instance has type "unknown" because it's not known
-// what version the instance object is
-//
-export type RuntimeWrappedContext = {
-	/**
-	 * @brief Version of the context.
-	 */
-	_version : number
+export type RuntimeWrappedContext = RuntimeVersionedObject & {
+	_kind: "RuntimeContext"
 
 	/**
-	 * @brief The wrapped context instance.
+	 * @brief The wrapped instance.
 	 */
 	_instance : unknown
 }
