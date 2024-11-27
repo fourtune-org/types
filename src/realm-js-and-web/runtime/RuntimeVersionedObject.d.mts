@@ -4,7 +4,7 @@ export type RuntimeVersionedObject = {
 	/**
 	 * @description
 	 * The kind of wrapped object.
-	 * Can be "RuntimeOptions" or "RuntimeContextInstance".
+	 * Can only be RuntimeContextInstance" (at the moment).
 	 */
 	_kind: string
 
