@@ -21,6 +21,9 @@
     "./realm-js-and-web/_versionless/runtime": {
       "types": "./src/realm-js-and-web/_versionless/runtime/index.d.mts"
     },
+    "./realm-js-and-web/v*/utils": {
+      "types": "./src/realm-js-and-web/v*/utils/index.d.mts"
+    },
     "./realm-js-and-web/v*/autogenerate": {
       "types": "./src/realm-js-and-web/v*/autogenerate/index.d.mts"
     },
