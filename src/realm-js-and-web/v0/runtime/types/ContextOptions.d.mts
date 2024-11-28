@@ -1,4 +1,4 @@
-import type {RuntimePackageInformation} from "../../../runtime/RuntimePackageInformation.d.mts"
+import type {RuntimePackageInformation} from "../../../_versionless/runtime/RuntimePackageInformation.d.mts"
 import type {LogLevel} from "./LogLevel.d.mts"
 import type {ContextInstance} from "./ContextInstance.d.mts"
 

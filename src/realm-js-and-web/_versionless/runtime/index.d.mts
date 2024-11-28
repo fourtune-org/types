@@ -1,6 +1,6 @@
 import type {RuntimeWrappedContextInstance} from "./RuntimeWrappedContextInstance.d.mts"
 import type {RuntimePackageInformation} from "./RuntimePackageInformation.d.mts"
-import type {ContextInstance as ContextInstanceV0} from "../v0/runtime/index.d.mts"
+import type {ContextInstance as ContextInstanceV0} from "../../v0/runtime/index.d.mts"
 
 export {ContextInstanceV0}
 export {ContextInstanceV0 as ContextInstanceV0Rev0}

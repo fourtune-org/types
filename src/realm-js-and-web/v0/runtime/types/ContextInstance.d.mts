@@ -1,4 +1,4 @@
-import type {RuntimeContextInstanceInternals} from "../../../runtime/RuntimeContextInstanceInternals.d.mts"
+import type {RuntimeContextInstanceInternals} from "../../../_versionless/runtime/RuntimeContextInstanceInternals.d.mts"
 import type {Project} from "../../project/index.d.mts"
 import type {ContextOptions} from "./ContextOptions.d.mts"
 
