@@ -1,4 +1,8 @@
 export type IsExpandableName = (
+	name: string
+) => boolean
+
+export type IsExpandableFilePath = (
 	file_name: string
 ) => boolean
 
@@ -12,6 +16,7 @@ export type ExpandAsyncSyncVariantFilePath = (
 
 export type ExportObject = {
 	isExpandableName: IsExpandableName,
+	isExpandableFilePath: IsExpandableFilePath,
 	expandAsyncSyncVariantName: ExpandAsyncSyncVariantName,
 	expandAsyncSyncVariantFilePath: ExpandAsyncSyncVariantFilePath
 }
