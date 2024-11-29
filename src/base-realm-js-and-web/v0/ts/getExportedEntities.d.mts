@@ -1,12 +1,12 @@
 import ts from "typescript"
 
-export type DeclarationElement = {
+export type TsGetExportedEntitiesDeclarationElement = {
 	is_type_only: boolean
 	export_name: string
 	original_name: string
 }
 
-export type Entity = {
+export type TsGetExportedEntitiesEntity = {
 	kind: string,
 	node: ts.ExportDeclaration|
 	      ts.TypeAliasDeclaration|
@@ -17,7 +17,7 @@ export type Entity = {
 	kind: "named"
 	node: ts.ExportDeclaration
 	module_name?: string|undefined
-	elements: DeclarationElement[]
+	elements: TsGetExportedEntitiesDeclarationElement[]
 } | {
 	kind: "star"
 	node: ts.ExportDeclaration
@@ -45,4 +45,4 @@ export type Entity = {
 
 export type TsGetExportedEntities = (
 	source: ts.SourceFile
-) => Promise<Entity[]>
+) => Promise<TsGetExportedEntitiesEntity[]>
