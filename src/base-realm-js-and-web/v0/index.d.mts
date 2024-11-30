@@ -1,3 +1,8 @@
+// general type
+export type TsAliases = {
+	[key : string] : string
+}
+
 export type * from "./js/bundler.d.mts"
 export type * from "./js/resolveImportAliases.d.mts"
 export type * from "./js/getDeclaredExportNamesFromCode.d.mts"

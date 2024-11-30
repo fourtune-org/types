@@ -1,6 +1,4 @@
-export type TsAliases = {
-	[key : string] : string
-}
+import type {TsAliases} from "../index.d.mts"
 
 export type TsResolveImportAliasesOptions = {
 	filename? : string
