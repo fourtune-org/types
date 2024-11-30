@@ -18,7 +18,7 @@ export type * from "./ts/invokeTypeScript.d.mts"
 export type * from "./ts/bundler.d.mts"
 export type * from "./ts/getDeclaredExportNamesFromCode.d.mts"
 export type * from "./ts/resolveImportAliases.d.mts"
-export type * from "./ts/generateFunctionFactoryCode.d.mts"
+export type * from "./ts/generateFunctionFactoryCodeForRealmJSAndWebV0.d.mts"
 export type * from "./ts/getExportedEntities.d.mts"
 
 import type {JsBundler} from "./js/bundler.d.mts"
@@ -36,7 +36,7 @@ import type {TsInvokeTypeScript} from "./ts/invokeTypeScript.d.mts"
 import type {TsBundler} from "./ts/bundler.d.mts"
 import type {TsGetDeclaredExportNamesFromCode} from "./ts/getDeclaredExportNamesFromCode.d.mts"
 import type {TsResolveImportAliases} from "./ts/resolveImportAliases.d.mts"
-import type {TsGenerateFunctionFactoryCode} from "./ts/generateFunctionFactoryCode.d.mts"
+import type {TsGenerateFunctionFactoryCodeForRealmJSAndWebV0} from "./ts/generateFunctionFactoryCodeForRealmJSAndWebV0.d.mts"
 import type {TsGetExportedEntities} from "./ts/getExportedEntities.d.mts"
 
 import * as ts from "typescript"
@@ -58,6 +58,6 @@ export type DefaultExportObject = {
 	tsBundler: TsBundler,
 	tsGetDeclaredExportNamesFromCode: TsGetDeclaredExportNamesFromCode,
 	tsResolveImportAliases: TsResolveImportAliases,
-	tsGenerateFunctionFactoryCode: TsGenerateFunctionFactoryCode,
+	tsGenerateFunctionFactoryCodeForRealmJSAndWebV0: TsGenerateFunctionFactoryCodeForRealmJSAndWebV0,
 	tsGetExportedEntities: TsGetExportedEntities
 }

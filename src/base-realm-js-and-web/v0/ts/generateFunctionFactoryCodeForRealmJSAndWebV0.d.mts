@@ -1,6 +1,6 @@
 import type {TsAliases} from "../index.d.mts"
 
-export type TsGenerateFunctionFactoryCodeSource = {
+export type TsGenerateFunctionFactoryCodeForRealmJSAndWebV0Source = {
 	source: string,
 	output: {
 		fn: string,
@@ -8,9 +8,9 @@ export type TsGenerateFunctionFactoryCodeSource = {
 	}
 }
 
-export type TsGenerateFunctionFactoryCode = (
+export type TsGenerateFunctionFactoryCodeForRealmJSAndWebV0 = (
 	project_root: string,
-	source: TsGenerateFunctionFactoryCodeSource,
+	source: TsGenerateFunctionFactoryCodeForRealmJSAndWebV0Source,
 	code: string,
 	expect_async_implementation: boolean|null,
 	aliases?: TsAliases
