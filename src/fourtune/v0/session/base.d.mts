@@ -16,8 +16,7 @@ export type FourtuneSessionBase = {
 		meta: {[key: string]: string}
 	) => undefined
 
-	// todo: make this sync
 	getDependency : (
 		dependency_name: string
-	) => Promise<unknown>
+	) => unknown
 }
