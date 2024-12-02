@@ -1,6 +1,7 @@
 export type Realm = "js" | "c" | "web"
 
 export type GetVersion = () => number
+export type GetExactVersion = () => string
 
 export type SetEnableDebugPrint = (
 	enabled: boolean
@@ -61,6 +62,7 @@ export type FindProjectRootFromDirectory = (
 
 export type DefaultExportObject = {
 	getVersion: GetVersion,
+	getExactVersion: GetExactVersion,
 	setEnableDebugPrint: SetEnableDebugPrint,
 	loadRealmDependency: LoadRealmDependency,
 	installRealmDependencies: InstallRealmDependencies,
