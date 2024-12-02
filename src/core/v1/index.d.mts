@@ -22,6 +22,7 @@ export type LoadRealmDependency = (
 
 export type DependencyMapEntry = {
 	version: string
+	isolated?: boolean
 } & ({
 	import_kind?: "default"
 } | {
