@@ -1,5 +1,19 @@
 export type Realm = "js" | "c" | "web"
 
+export type _DependenciesFileExport = {
+	created_by_core_version: number
+	realm: Realm
+	platform: string
+	dependencies: {
+		[name: string]: {
+			name: string
+			module: any
+			version: string
+			isolated: boolean
+		}
+	}
+}
+
 export type GetVersion = () => number
 export type GetExactVersion = () => string
 
