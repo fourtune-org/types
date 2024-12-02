@@ -8,6 +8,11 @@ type Source = {
 	}
 }
 
+// remove this as it also depends on "aliases"
+// this package is meant to provide APIs
+// to typescript , rollup and babel
+// not do realm specific things
+
 export type {Source as TsGenerateFunctionFactoryCodeForRealmJSAndWebV0Source}
 
 export type TsGenerateFunctionFactoryCodeForRealmJSAndWebV0 = (
