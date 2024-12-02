@@ -18,5 +18,5 @@ export type FourtuneSessionBase = {
 
 	getDependency : (
 		dependency_name: string
-	) => Promise<unknown>
+	) => Promise<any>
 }
