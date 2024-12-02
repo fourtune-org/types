@@ -21,6 +21,11 @@ export type LoadRealmDependency = (
 	dependency_name: string
 ) => Promise<LoadRealmDependencyResult>
 
+export type GetRealmDependencyNames = (
+	project_root: string | "cli",
+	realm: Realm
+) => Promise<string[]>
+
 export type DependencyMapEntry = {
 	version: string
 	isolated?: boolean
@@ -65,6 +70,7 @@ export type DefaultExportObject = {
 	getExactVersion: GetExactVersion,
 	setEnableDebugPrint: SetEnableDebugPrint,
 	loadRealmDependency: LoadRealmDependency,
+	getRealmDependencyNames: GetRealmDependencyNames,
 	installRealmDependencies: InstallRealmDependencies,
 	findProjectRootFromDirectory: FindProjectRootFromDirectory
 }
