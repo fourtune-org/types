@@ -21,9 +21,17 @@ export type LoadRealmDependency = (
 ) => Promise<LoadRealmDependencyResult>
 
 export type DependencyMapEntry = {
-	version: string,
-	import_code?: string|null
-}
+	version: string
+} & ({
+	import_kind?: "default"
+} | {
+	import_kind: "star"
+} | {
+	import_kind: "named"
+	imports: {
+		[name: string]: string|undefined
+	}
+})
 
 export type DependencyMap = {
 	[name: string] : DependencyMapEntry
