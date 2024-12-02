@@ -17,6 +17,7 @@ export type FourtuneAutogenerateGenerateAsyncSyncVariantFromString = (
 	variant: "async" | "sync"
 ) => FourtuneFileGenerator
 
+// todo: remove as this has been moved to @fourtune/realm-js
 export type FourtuneAutogenerate = {
 	generateFromTemplate: FourtuneAutogenerateGenerateFromTemplate,
 	generateAsyncSyncVariant: FourtuneAutogenerateGenerateAsyncSyncVariant,
