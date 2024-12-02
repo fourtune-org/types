@@ -44,5 +44,5 @@ export type TsGetExportedEntitiesEntity = {
 })
 
 export type TsGetExportedEntities = (
-	source: ts.SourceFile
+	code: string
 ) => Promise<TsGetExportedEntitiesEntity[]>
