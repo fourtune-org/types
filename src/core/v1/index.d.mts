@@ -82,6 +82,7 @@ export type DefaultExportObject = {
 	getExactVersion: GetExactVersion,
 	setEnableDebugPrint: SetEnableDebugPrint,
 	loadRealmDependency: LoadRealmDependency,
+	// todo: consider removing it again
 	_getRealmDependencyNames: _GetRealmDependencyNames,
 	installRealmDependencies: InstallRealmDependencies,
 	findProjectRootFromDirectory: FindProjectRootFromDirectory
