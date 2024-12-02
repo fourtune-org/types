@@ -5,13 +5,11 @@ export type _DependenciesFileExport = {
 	realm: Realm
 	platform: string
 	dependencies: {
-		[name: string]: {
-			name: string
-			module: any
-			version: string
-			isolated: boolean
-		}
-	}
+		name: string
+		module: any
+		version: string
+		isolated: boolean
+	}[]
 }
 
 export type GetVersion = () => number
