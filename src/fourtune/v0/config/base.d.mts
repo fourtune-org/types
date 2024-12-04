@@ -1,4 +1,4 @@
-import type {Realm} from "../../../core/v1/index.d.mts"
+import type {Realm as RealmName} from "../../../core/v1/index.d.mts"
 import type {FourtuneSession} from "../session.d.mts"
 
 export type FourtuneConfigAutogenerator = (
@@ -10,8 +10,13 @@ export type FourtuneConfigAutogenerate = {
 	[file_path: string] : FourtuneConfigAutogenerator
 }
 
+export type RealmConfig = {
+	realm: RealmName
+	type: string
+	options?: Record<string, any>
+}
+
 export type FourtuneConfigBase = {
-	realm: Realm,
-	type: string,
+	realm: RealmConfig,
 	autogenerate?: FourtuneConfigAutogenerate
 }

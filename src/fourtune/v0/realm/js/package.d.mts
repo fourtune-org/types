@@ -1,4 +1,9 @@
 export type FourtuneRealmJSPackageType = {
-	realm: "js",
-	type: "package"
+	realm: {
+		name: "js"
+		type: "package"
+		options?: {
+			external_npm_packages: string[]
+		}
+	}
 }
