@@ -11,6 +11,7 @@ export type JsBundlerOptions = {
 	treeshake? : boolean
 	additional_plugins? : JsBundlerPlugin[]
 	on_rollup_log_fn? : ((...args: any[]) => any) | null
+	externals?: string[]
 }
 
 export type JsBundler = (
