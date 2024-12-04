@@ -14,6 +14,7 @@ export type * from "./ts/getDeclaredExportNamesFromCode.d.mts"
 export type * from "./ts/resolveImportAliases.d.mts"
 export type * from "./ts/generateFunctionFactoryCode.d.mts"
 export type * from "./ts/getExportedEntities.d.mts"
+export type * from "./ts/typeDeclarationBundler.d.mts"
 
 import type {JsBundler} from "./js/bundler.d.mts"
 import type {JsResolveImportAliases} from "./js/resolveImportAliases.d.mts"
@@ -31,6 +32,7 @@ import type {TsGetDeclaredExportNamesFromCode} from "./ts/getDeclaredExportNames
 import type {TsResolveImportAliases} from "./ts/resolveImportAliases.d.mts"
 import type {TsGenerateFunctionFactoryCode} from "./ts/generateFunctionFactoryCode.d.mts"
 import type {TsGetExportedEntities} from "./ts/getExportedEntities.d.mts"
+import type {TsTypeDeclarationBundler} from "./ts/typeDeclarationBundler.d.mts"
 
 import * as ts from "typescript"
 
@@ -51,5 +53,6 @@ export type DefaultExportObject = {
 	tsGetDeclaredExportNamesFromCode: TsGetDeclaredExportNamesFromCode,
 	tsResolveImportAliases: TsResolveImportAliases,
 	tsGenerateFunctionFactoryCode: TsGenerateFunctionFactoryCode,
-	tsGetExportedEntities: TsGetExportedEntities
+	tsGetExportedEntities: TsGetExportedEntities,
+	tsTypeDeclarationBundler: TsTypeDeclarationBundler
 }
