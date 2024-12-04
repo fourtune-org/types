@@ -15,6 +15,7 @@ export type * from "./ts/resolveImportAliases.d.mts"
 export type * from "./ts/getExportedEntities.d.mts"
 export type * from "./ts/typeDeclarationBundler.d.mts"
 export type * from "./ts/assetFileBundler.d.mts"
+export type * from "./ts/generateFunctionFactoryCodeForRealmJSAndWebV0.d.mts"
 
 import type {JsBundler} from "./js/bundler.d.mts"
 import type {JsResolveImportAliases} from "./js/resolveImportAliases.d.mts"
@@ -33,6 +34,7 @@ import type {TsResolveImportAliases} from "./ts/resolveImportAliases.d.mts"
 import type {TsGetExportedEntities} from "./ts/getExportedEntities.d.mts"
 import type {TsTypeDeclarationBundler} from "./ts/typeDeclarationBundler.d.mts"
 import type {TsAssetFileBundler} from "./ts/assetFileBundler.d.mts"
+import type {TsGenerateFunctionFactoryCodeForRealmJSAndWebV0} from "./ts/generateFunctionFactoryCodeForRealmJSAndWebV0.d.mts"
 
 import * as ts from "typescript"
 
@@ -54,5 +56,6 @@ export type DefaultExportObject = {
 	tsResolveImportAliases: TsResolveImportAliases,
 	tsGetExportedEntities: TsGetExportedEntities,
 	tsTypeDeclarationBundler: TsTypeDeclarationBundler,
-	tsAssetFileBundler: TsAssetFileBundler
+	tsAssetFileBundler: TsAssetFileBundler,
+	tsGenerateFunctionFactoryCodeForRealmJSAndWebV0: TsGenerateFunctionFactoryCodeForRealmJSAndWebV0
 }
