@@ -2,7 +2,7 @@ import type {JsBundlerOptions} from "../js/bundler.d.mts"
 
 export type TsAssetFileBundlerOptions = Omit<
 	JsBundlerOptions,
-	"input_file_type" | "treeshake"
+	"input_file_type" | "treeshake" | "externals"
 >
 
 export type TsAssetFileBundler = (
