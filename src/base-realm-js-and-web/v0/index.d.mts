@@ -17,6 +17,11 @@ export type * from "./ts/typeDeclarationBundler.d.mts"
 export type * from "./ts/assetFileBundler.d.mts"
 export type * from "./ts/generateFunctionFactoryCodeForRealmJSAndWebV0.d.mts"
 
+export type * from "./util/expandAsyncSyncVariantFilePath.d.mts"
+export type * from "./util/expandAsyncSyncVariantName.d.mts"
+export type * from "./util/isExpandableFilePath.d.mts"
+export type * from "./util/isExpandableName.d.mts"
+
 import type {JsBundler} from "./js/bundler.d.mts"
 import type {JsResolveImportAliases} from "./js/resolveImportAliases.d.mts"
 import type {JsGetDeclaredExportNamesFromCode} from "./js/getDeclaredExportNamesFromCode.d.mts"
@@ -38,6 +43,11 @@ import type {TsGenerateFunctionFactoryCodeForRealmJSAndWebV0} from "./ts/generat
 
 import * as ts from "typescript"
 
+import type {UtilExpandAsyncSyncVariantFilePath} from "./util/expandAsyncSyncVariantFilePath.d.mts"
+import type {UtilExpandAsyncSyncVariantName} from "./util/expandAsyncSyncVariantName.d.mts"
+import type {UtilIsExpandableFilePath} from "./util/isExpandableFilePath.d.mts"
+import type {UtilIsExpandableName} from "./util/isExpandableName.d.mts"
+
 export type DefaultExportObject = {
 	jsBundler: JsBundler,
 	jsResolveImportAliases: JsResolveImportAliases,
@@ -57,5 +67,10 @@ export type DefaultExportObject = {
 	tsGetExportedEntities: TsGetExportedEntities,
 	tsTypeDeclarationBundler: TsTypeDeclarationBundler,
 	tsAssetFileBundler: TsAssetFileBundler,
-	tsGenerateFunctionFactoryCodeForRealmJSAndWebV0: TsGenerateFunctionFactoryCodeForRealmJSAndWebV0
+	tsGenerateFunctionFactoryCodeForRealmJSAndWebV0: TsGenerateFunctionFactoryCodeForRealmJSAndWebV0,
+
+	utilExpandAsyncSyncVariantFilePath: UtilExpandAsyncSyncVariantFilePath,
+	utilExpandAsyncSyncVariantName: UtilExpandAsyncSyncVariantName,
+	utilIsExpandableFilePath: UtilIsExpandableFilePath,
+	utilIsExpandableName: UtilIsExpandableName
 }
