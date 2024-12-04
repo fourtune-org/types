@@ -20,7 +20,7 @@ export type ContextOptionsLogWithLevel = (
 export type ContextOptionsShouldLog = (
 	context : ContextInstance,
 	level : LogLevel,
-	package : RuntimePackageInformation,
+	pkg : RuntimePackageInformation,
 	tag : string
 ) => boolean
 
