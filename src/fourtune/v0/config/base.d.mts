@@ -1,4 +1,4 @@
-import type {Realm as RealmName} from "../../../core/v1/index.d.mts"
+import type {RealmName} from "../../../core/v1/index.d.mts"
 import type {FourtuneSession} from "../session.d.mts"
 
 export type FourtuneConfigAutogenerator = (

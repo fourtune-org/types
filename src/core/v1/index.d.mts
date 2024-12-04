@@ -1,8 +1,8 @@
-export type Realm = "js" | "c" | "web"
+export type RealmName = "js" | "c" | "web"
 
 export type _DependenciesFileExport = {
 	created_by_core_version: number
-	realm: Realm
+	realm_name: RealmName
 	platform: string
 	dependencies: {
 		name: string
@@ -29,13 +29,13 @@ export type LoadRealmDependencyResult = {
 
 export type LoadRealmDependency = (
 	project_root: string | "cli",
-	realm: Realm,
+	realm_name: RealmName,
 	dependency_name: string
 ) => Promise<LoadRealmDependencyResult>
 
 export type _GetRealmDependencyNames = (
 	project_root: string,
-	realm: Realm
+	realm_name: RealmName
 ) => Promise<string[]|false>
 
 export type DependencyMapEntry = {
@@ -68,7 +68,7 @@ export type InstallRealmDependenciesOptions = {
 
 export type InstallRealmDependencies = (
 	project_root: string | "cli",
-	realm: Realm,
+	realm_name: RealmName,
 	dependencies: DependenciesToInstall,
 	options?: InstallRealmDependenciesOptions
 ) => Promise<undefined>
