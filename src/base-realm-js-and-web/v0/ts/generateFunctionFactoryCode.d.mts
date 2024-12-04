@@ -1,4 +1,4 @@
-export type TsGenerateFunctionFactoryCodeSource = {
+type Source = {
 	source: string,
 	output: {
 		fn: string,
@@ -6,8 +6,10 @@ export type TsGenerateFunctionFactoryCodeSource = {
 	}
 }
 
+export type {Source as TsGenerateFunctionFactoryCodeSource}
+
 export type TsGenerateFunctionFactoryCode = (
-	source: TsGenerateFunctionFactoryCodeSource,
+	source: Source|([Source, Source]),
 	code: string,
 	expect_async_implementation: boolean|null
 ) => Promise<{
