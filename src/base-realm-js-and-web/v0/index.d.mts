@@ -12,7 +12,6 @@ export type * from "./ts/readTSConfigFile.d.mts"
 export type * from "./ts/invokeTypeScript.d.mts"
 export type * from "./ts/getDeclaredExportNamesFromCode.d.mts"
 export type * from "./ts/resolveImportAliases.d.mts"
-export type * from "./ts/generateFunctionFactoryCode.d.mts"
 export type * from "./ts/getExportedEntities.d.mts"
 export type * from "./ts/typeDeclarationBundler.d.mts"
 export type * from "./ts/assetFileBundler.d.mts"
@@ -31,7 +30,6 @@ import type {TsReadTSConfigFile} from "./ts/readTSConfigFile.d.mts"
 import type {TsInvokeTypeScript} from "./ts/invokeTypeScript.d.mts"
 import type {TsGetDeclaredExportNamesFromCode} from "./ts/getDeclaredExportNamesFromCode.d.mts"
 import type {TsResolveImportAliases} from "./ts/resolveImportAliases.d.mts"
-import type {TsGenerateFunctionFactoryCode} from "./ts/generateFunctionFactoryCode.d.mts"
 import type {TsGetExportedEntities} from "./ts/getExportedEntities.d.mts"
 import type {TsTypeDeclarationBundler} from "./ts/typeDeclarationBundler.d.mts"
 import type {TsAssetFileBundler} from "./ts/assetFileBundler.d.mts"
@@ -54,7 +52,6 @@ export type DefaultExportObject = {
 	tsInvokeTypeScript: TsInvokeTypeScript,
 	tsGetDeclaredExportNamesFromCode: TsGetDeclaredExportNamesFromCode,
 	tsResolveImportAliases: TsResolveImportAliases,
-	tsGenerateFunctionFactoryCode: TsGenerateFunctionFactoryCode,
 	tsGetExportedEntities: TsGetExportedEntities,
 	tsTypeDeclarationBundler: TsTypeDeclarationBundler,
 	tsAssetFileBundler: TsAssetFileBundler
