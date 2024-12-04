@@ -5,8 +5,8 @@ export type TsAssetFileBundlerOptions = Omit<
 	"input_file_type" | "treeshake"
 >
 
-export type TsAssetFileBundler = {
+export type TsAssetFileBundler = (
 	project_root : string,
 	entry_code : string,
 	options? : TsAssetFileBundlerOptions
-}
+) => Promise<string>
