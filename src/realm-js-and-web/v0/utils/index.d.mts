@@ -14,12 +14,12 @@ export type ExpandAsyncSyncVariantFilePath = (
 	file_path: string
 ) => [string, string]
 
-export type ExpandAsyncSyncVariantSourceCode = (
+export type ExpandAsyncSyncVariantSourceFile = (
 	source_file: string,
 	variant: "async" | "sync"
 ) => string
 
-export type ExpandAsyncSyncVariantSourceCodeFromString = (
+export type ExpandAsyncSyncVariantSourceCode = (
 	code: string,
 	variant: "async" | "sync",
 	input_source_file_name?: string
@@ -30,8 +30,8 @@ export type ExportObject = {
 	isExpandableFilePath: IsExpandableFilePath,
 	expandAsyncSyncVariantName: ExpandAsyncSyncVariantName,
 	expandAsyncSyncVariantFilePath: ExpandAsyncSyncVariantFilePath,
-	expandAsyncSyncVariantSourceCode: ExpandAsyncSyncVariantSourceCode,
-	expandAsyncSyncVariantSourceCodeFromString: ExpandAsyncSyncVariantSourceCodeFromString
+	expandAsyncSyncVariantSourceFile: ExpandAsyncSyncVariantSourceFile,
+	expandAsyncSyncVariantSourceCode: ExpandAsyncSyncVariantSourceCode
 }
 
 export type DefaultExportObject = ExportObject
