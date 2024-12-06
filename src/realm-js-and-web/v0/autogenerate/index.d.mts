@@ -13,21 +13,8 @@ export type GenerateFactoryFiles = (
 	[key: string]: FourtuneFileGenerator
 }
 
-export type GenerateAsyncSyncVariant = (
-	source_file: string,
-	variant: "async" | "sync"
-) => FourtuneFileGenerator
-
-export type GenerateAsyncSyncVariantFromString = (
-	code: string,
-	variant: "async" | "sync",
-	input_source_file_name?: string
-) => FourtuneFileGenerator
-
 export type ExportObject = {
-	generateFactoryFiles: GenerateFactoryFiles,
-	generateAsyncSyncVariant: GenerateAsyncSyncVariant,
-	generateAsyncSyncVariantFromString: GenerateAsyncSyncVariantFromString
+	generateFactoryFiles: GenerateFactoryFiles
 }
 
 export type DefaultExportObject = ExportObject
