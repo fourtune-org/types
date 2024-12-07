@@ -1,5 +1,4 @@
 export type * from "./js/bundler.d.mts"
-export type * from "./js/resolveImportAliases.d.mts"
 export type * from "./js/getDeclaredExportNamesFromCode.d.mts"
 export type * from "./js/getRequestedAssetsFromCode.d.mts"
 export type * from "./js/getRequestedAssetsFromFiles.d.mts"
@@ -18,7 +17,6 @@ export type * from "./ts/assetFileBundler.d.mts"
 export type * from "./ts/generateFunctionFactoryCodeForRealmJSAndWebV0.d.mts"
 
 import type {JsBundler} from "./js/bundler.d.mts"
-import type {JsResolveImportAliases} from "./js/resolveImportAliases.d.mts"
 import type {JsGetDeclaredExportNamesFromCode} from "./js/getDeclaredExportNamesFromCode.d.mts"
 import type {JsGetRequestedAssetsFromCode} from "./js/getRequestedAssetsFromCode.d.mts"
 import type {JsGetRequestedAssetsFromFiles} from "./js/getRequestedAssetsFromFiles.d.mts"
@@ -40,7 +38,6 @@ import * as ts from "typescript"
 
 export type DefaultExportObject = {
 	jsBundler: JsBundler,
-	jsResolveImportAliases: JsResolveImportAliases,
 	jsGetDeclaredExportNamesFromCode: JsGetDeclaredExportNamesFromCode,
 	jsGetRequestedAssetsFromCode: JsGetRequestedAssetsFromCode,
 	jsGetRequestedAssetsFromFiles: JsGetRequestedAssetsFromFiles,
