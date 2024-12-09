@@ -3,7 +3,8 @@ export type FourtuneRealmJSPackageType = {
 		name: "js"
 		type: "package"
 		options?: {
-			external_npm_packages: string[]
+			external_npm_packages?: string[]
+			runtime?: "node"|"browser"|"agnostic"
 		}
 	}
 }
