@@ -1,12 +1,6 @@
-export type FourtuneSessionInputEntry = {
-	parents: string[],
-	name: string,
-	relative_path: string,
-	source: string
-	synthetic?: boolean
-}
+import type {FourtuneSessionInputFile} from "../FourtuneSessionInputFile.d.mts"
 
 export type FourtuneSessionInput = {
-	getSourceFiles : () => FourtuneSessionInputEntry[]
-	getAssetFiles: () => FourtuneSessionInputEntry[]
+	getSourceFiles: () => FourtuneSessionInputFile[]
+	getAssetFiles: () => FourtuneSessionInputFile[]
 }

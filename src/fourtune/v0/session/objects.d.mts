@@ -1,4 +1,4 @@
-import type {FourtuneFileGenerator} from "../generator.d.mts"
+import type {FourtuneFileGenerator} from "../FourtuneFileGenerator.d.mts"
 
 export type FourtuneSessionObjects = {
 	addObject: (

@@ -1,14 +1,12 @@
-import type {FourtuneHookId} from "../hooks.d.mts"
-import type {FourtuneSession} from "../session.d.mts"
-
-export type FourtuneSessionHookFn = (
-	fourtune_session: FourtuneSession,
-	hook_id: FourtuneHookId
-) => undefined
+import type {FourtuneSession} from "../FourtuneSession.d.mts"
+import type {FourtuneHookId} from "../FourtuneHookId.d.mts"
 
 export type FourtuneSessionHooks = {
 	register: (
 		id: FourtuneHookId,
-		fn: FourtuneSessionHookFn
+		fn: (
+			fourtune_session: FourtuneSession,
+			hook_id: FourtuneHookId
+		) => Promise<undefined>
 	) => undefined
 }
