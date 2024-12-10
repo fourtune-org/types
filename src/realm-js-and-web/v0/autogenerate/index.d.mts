@@ -1,4 +1,4 @@
-import type {FourtuneFileGenerator} from "../../../fourtune/v0/generator.d.mts"
+import type {FourtuneFileGenerator} from "../../../fourtune/v0/index.d.mts"
 
 export type GenerateFactoryFilesOptions = {
 	source_file: string
