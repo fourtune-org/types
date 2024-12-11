@@ -11,6 +11,7 @@ function tsc() {
 tsc "./src/core/v1/index.d.mts"
 tsc "./src/fourtune/v0/api/index.d.mts"
 tsc "./src/fourtune/v0/config/index.d.mts"
+tsc "./src/fourtune/v0/session/index.d.mts"
 tsc "./src/base-realm-js-and-web/v0/index.d.mts"
 tsc "./src/realm-js-and-web/v0/runtime/index.d.mts"
 tsc "./src/realm-js-and-web/v0/project/index.d.mts"
