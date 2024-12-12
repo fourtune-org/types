@@ -2,7 +2,7 @@ import type {FourtuneSession} from "../index.d.mts"
 
 export type AutogenerateGenerator = (
 	fourtune_session: FourtuneSession,
-	category: string | "fourtune",
+	category: "fourtune" | "user" | unknown,
 	file_path: string
 ) => Promise<string>
 
