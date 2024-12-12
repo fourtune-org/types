@@ -1,4 +1,4 @@
-import type {FourtuneFileGenerator} from "../../../fourtune/v0/index.d.mts"
+import type {AutogenerateGenerator} from "../../../fourtune/v0/session/autogenerate/index.d.mts"
 
 export type GenerateFactoryFilesOptions = {
 	source_file: string
@@ -10,7 +10,7 @@ export type GenerateFactoryFilesOptions = {
 export type GenerateFactoryFiles = (
 	options: GenerateFactoryFilesOptions
 ) => {
-	[key: string]: FourtuneFileGenerator
+	[key: string]: AutogenerateGenerator<"user">
 }
 
 export type ExportObject = {
