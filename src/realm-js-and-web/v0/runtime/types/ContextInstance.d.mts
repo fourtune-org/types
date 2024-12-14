@@ -1,37 +1,15 @@
 import type {RuntimeContextInstanceInternals} from "../../../_versionless/runtime/RuntimeContextInstanceInternals.d.mts"
 import type {Project} from "../../project/index.d.mts"
 import type {ContextOptions} from "./ContextOptions.d.mts"
+import type {LogLevel } from "./LogLevel.d.mts"
 
 type ContextInstanceLogMethod = {
+	[K in LogLevel]: (...messages: string[]) => undefined
+} & {
 	/**
 	 * @brief Log a message with severity "debug".
 	 */
 	(...messages: string[]) : undefined
-
-	/**
-	 * @brief Log a message with severity "error".
-	 */
-	error(...messages: string[]) : undefined
-
-	/**
-	 * @brief Log a message with severity "warning".
-	 */
-	warn(...messages: string[]) : undefined
-
-	/**
-	 * @brief Log a message with severity "information".
-	 */
-	info(...messages: string[]) : undefined
-
-	/**
-	 * @brief Log a message with severity "debug".
-	 */
-	debug(...messages: string[]) : undefined
-
-	/**
-	 * @brief Log a message with severity "trace".
-	 */
-	trace(...messages: string[]) : undefined
 }
 
 //
