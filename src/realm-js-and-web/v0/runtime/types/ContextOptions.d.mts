@@ -4,7 +4,7 @@ import type {ContextInstance} from "./ContextInstance.d.mts"
 
 export type ContextOptionsGetCurrentLogLevel = (
 	context: ContextInstance
-) => LogLevel
+) => LogLevel|null
 
 export type ContextOptionsPrintLine = (
 	context: ContextInstance,
@@ -22,7 +22,7 @@ export type ContextOptionsShouldLog = (
 	level : LogLevel,
 	pkg : RuntimePackageInformation,
 	tag : string
-) => boolean
+) => boolean|null
 
 export type ContextOptions = {
 	/**
