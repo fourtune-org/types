@@ -21,4 +21,8 @@ export type ContextInstance = RuntimeContextInstanceInternals & {
 	options : ContextOptions
 
 	log : ContextInstanceLogMethod
+
+	defaults: {
+		[K in keyof Omit<ContextOptions, "tag">]: ContextOptions[K]
+	}
 }
