@@ -1,8 +1,8 @@
 export type LogLevel = 
-	"emerg" |
-	"crit"  |
+	"emerg" | /* emergency */
+	"crit"  | /* critical */
 	"error" |
-	"warn"  |
+	"warn"  | /* warning */
 	"info"  |
 	"debug" |
 	"trace" |
