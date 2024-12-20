@@ -7,7 +7,7 @@ type ContextInstanceLogMethod = {
 	[K in LogLevel]: (...messages: string[]) => undefined
 } & {
 	/**
-	 * @brief Log a message with severity "debug".
+	 * @brief Log a message with a severity.
 	 */
 	(...messages: string[]) : undefined
 }
